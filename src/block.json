@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/breadcrumbs-block",
-	"version": "0.1.0",
+	"name": "living-pixel/breadcrumbs-block",
+	"version": "0.9.0",
 	"title": "Breadcrumbs Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Add a breadcrumbs block to your pages and posts.",
 	"supports": {
 		"html": false
 	},

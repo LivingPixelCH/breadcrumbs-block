@@ -1,3 +1,11 @@
+<?php
+namespace BreadcrumbsBlock;
+
+use BreadcrumbsBlock\Breadcrumb;
+
+$breadcrumbs = new Breadcrumb();
+?>
+
 <p <?php echo get_block_wrapper_attributes(); ?>>
- <?php esc_html_e( 'Breadcrumbs Block – hello from a dynamic block!', 'breadcrumbs-block' ); ?>
+	<?php esc_html($breadcrumbs->render()); ?>
 </p>

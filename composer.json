@@ -1,0 +1,14 @@
+{
+    "name": "livingpixel/breadcumbs-block",
+    "description": "A Gutenberg Block that adds a breadcrumb trail\"",
+    "type": "project",
+    "license": "GPL 2.0",
+    "authors": [
+        {
+            "name": "Daniel Von Rohr",
+            "email": "info@livingpixel.ch"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
