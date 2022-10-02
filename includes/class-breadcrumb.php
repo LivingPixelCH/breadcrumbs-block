@@ -71,7 +71,7 @@ class Breadcrumb {
 		if ( get_post_type() !== 'post' ) {
 			$post_type = get_post_type_object( get_post_type() );
 			$slug      = $post_type->rewrite;
-			$this->appendLinkToTrail( get_bloginfo( 'url' ) . '/' . $slug['slug'] . '/', $post_type->labels->singular_name );
+			$this->appendLinkToTrail( $post_type->labels->singular_name, get_bloginfo( 'url' ) . '/' . $slug['slug'] . '/' );
 			$this->appendToTrail( get_the_title(), true );
 		} else {
 			$category = get_the_category();
