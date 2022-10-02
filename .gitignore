@@ -1,3 +1,5 @@
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -10,9 +12,11 @@ coverage
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+build/
 
 # Dependency directories
 node_modules/
+vendor/
 
 # Optional npm cache directory
 .npm
@@ -29,4 +33,4 @@ node_modules/
 # dotenv environment variables file
 .env
 
-/vendor/
+
