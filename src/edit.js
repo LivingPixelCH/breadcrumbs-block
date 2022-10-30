@@ -1,19 +1,42 @@
 import { __ } from "@wordpress/i18n";
 import {
-	useBlockProps,
-	BlockControls,
 	AlignmentToolbar,
+	BlockControls,
+	InspectorControls,
+	useBlockProps,
 } from "@wordpress/block-editor";
+import {
+	Panel,
+	PanelBody,
+	PanelRow,
+	SelectControl,
+} from "@wordpress/components";
+
+import separatorOptions from "./options/separatorOptions";
 import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
-	const { textAlignment } = attributes;
+	const { textAlignment, separator } = attributes;
 
 	const alignmentClass =
 		textAlignment !== null ? "has-text-align-" + textAlignment : "";
 
 	return (
 		<>
+			<InspectorControls key="breadcrumbs-settings">
+				<Panel header={__("Breadcrumbs Settings")}>
+					<PanelBody title={__("General", "breadcrumbs-block")}>
+						<PanelRow>
+							<SelectControl
+								label={__("Separators", "breadcrumbs-block")}
+								value={separator}
+								options={separatorOptions}
+								onChange={(separator) => setAttributes({ separator })}
+							/>
+						</PanelRow>
+					</PanelBody>
+				</Panel>
+			</InspectorControls>
 			<BlockControls>
 				<AlignmentToolbar
 					value={textAlignment}
