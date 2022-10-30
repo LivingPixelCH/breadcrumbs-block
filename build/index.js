@@ -23,8 +23,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Edit() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Breadcrumbs Block – hello from the editor!', 'breadcrumbs-block'));
+function Edit(_ref) {
+  let {
+    attributes,
+    setAttributes
+  } = _ref;
+  const {
+    textAlignment
+  } = attributes;
+  const alignmentClass = textAlignment !== null ? "has-text-align-" + textAlignment : "";
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.AlignmentToolbar, {
+    value: textAlignment,
+    onChange: textAlignment => setAttributes({
+      textAlignment
+    })
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
+    className: alignmentClass
+  }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Breadcrumbs Block – hello from the editor!", "breadcrumbs-block")));
 }
 
 /***/ }),
@@ -121,7 +136,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"living-pixel/breadcrumbs-block","version":"0.9.0","title":"Breadcrumbs Block","category":"widgets","icon":"smiley","description":"Add a breadcrumbs block to your pages and posts.","supports":{"html":false},"textdomain":"breadcrumbs-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"living-pixel/breadcrumbs-block","version":"0.9.0","title":"Breadcrumbs Block","category":"widgets","icon":"smiley","description":"Add a breadcrumbs block to your pages and posts.","supports":{"html":false},"attributes":{"textAlignment":{"type":"string"}},"textdomain":"breadcrumbs-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

@@ -10,6 +10,11 @@
   "supports": {
     "html": false
   },
+  "attributes": {
+    "textAlignment": {
+      "type": "string"
+    }
+  },
   "textdomain": "breadcrumbs-block",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
