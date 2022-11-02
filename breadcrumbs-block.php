@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Breadcrumbs Block
+ * Plugin Name:       LivingPixel - Breadcrumbs Block
  * Description:       Display a breadcrumb trail on your website with Gutenberg.
  * Requires at least: 5.9
  * Requires PHP:      7.2
@@ -8,9 +8,9 @@
  * Author:            Daniel von Rohr <info@livingpixel.ch>
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       breadcrumbs-block
+ * Text Domain:       livingpixel-breadcrumbs-block
  *
- * @package           breadcrumbs-block
+ * @package           livingpixel-breadcrumbs-block
  */
 
 /**
